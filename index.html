@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Taxa Efetiva</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    h1, h2 { color: #333; }
+    pre { background: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto; }
+    code { font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Taxa Efetiva</h1>
+  <h2>1. .gitignore</h2>
+  <pre><code># Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Streamlit
+.streamlit/
+
+dist/
+build/
+  </code></pre>
+
+  <h2>2. requirements.txt</h2>
+  <pre><code>streamlit
+pandas
+  </code></pre>
+
+  <h2>3. Procfile</h2>
+  <pre><code>web: streamlit run app.py --server.port=$PORT
+  </code></pre>
+
+  <h2>4. app.py</h2>
+  <p>Seu código Streamlit (mantenha este arquivo na raiz):</p>
+  <pre><code>import streamlit as st
+# ... resto do seu app.py ...
+  </code></pre>
+
+  <h2>Como publicar:</h2>
+  <ol>
+    <li>Faça commit e push de tudo no GitHub.</li>
+    <li>Vá em **Settings → Pages** no repositório.</li>
+    <li>Em **Source**, selecione **Branch: main** e **Folder: /docs**.</li>
+    <li>O GitHub gerará um link `https://<usuário>.github.io/<repo>/` apontando para seu `index.html`.</li>
+  </ol>
+</body>
+</html>
